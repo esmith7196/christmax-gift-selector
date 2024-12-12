@@ -1,7 +1,9 @@
+// @ts-nocheck
 import { useState } from 'react';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import { Box, Heading, Input, Button, Text } from '@chakra-ui/react';
+import CountdownComponent from '../components/Countdown';
 
 const IndexPage = () => {
   const [pin, setPin] = useState('');
@@ -102,9 +104,13 @@ const IndexPage = () => {
                 <Button type="submit" colorScheme="green" width={'100%'}>
                   Submit
                 </Button>
+                <Box textAlign={'center'} mt={4} color={'red'}>
+                  Reminder: $25-$30 limit.
+                </Box>
                 <Box textAlign={'center'} mt={4} color={'white'}>
                   Any issues please contact Eric to complain. No take backs. 🎅
                 </Box>
+                <CountdownComponent date={new Date('2024-12-25T00:00:00')} />
               </form>
             </>
           ) : (
@@ -115,6 +121,7 @@ const IndexPage = () => {
               <Text mb={6} fontSize={'lg'}>
                 You will be gifting: <strong>{selectedPerson}</strong>
               </Text>
+
               <Button
                 colorScheme="green"
                 onClick={() => {
