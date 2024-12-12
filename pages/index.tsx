@@ -10,8 +10,8 @@ const IndexPage = () => {
 
   // Mapping of PINs to persons
   const pinToPersonMap = {
-    '1234': 'John Doe',
-    '5678': 'Jane Smith',
+    '1234': 'Eric Smith',
+    '5678': 'Julia Smith',
     '9101': 'Alice Johnson',
     '1121': 'Bob Brown',
   };
