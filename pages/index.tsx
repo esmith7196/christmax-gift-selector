@@ -85,6 +85,9 @@ const IndexPage = () => {
                 <Button type="submit" colorScheme="green" width={'100%'}>
                   Submit
                 </Button>
+                <Box textAlign={'center'} mt={4} color={'white'}>
+                  Any issues please contact Eric to complain. No take backs. 🎅
+                </Box>
               </form>
             </>
           ) : (
